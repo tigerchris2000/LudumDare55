@@ -172,5 +172,3 @@ libraries = {
 position = Vector2(-2, 4)
 scale = Vector2(3.575, 3.575)
 texture = ExtResource("4_6h5l0")
-
-[node name="Sprite2D" type="Sprite2D" parent="."]
