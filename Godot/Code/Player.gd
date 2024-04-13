@@ -3,14 +3,59 @@ extends RigidBody2D
 @export var max_speed: float = 10
 @export var acc: float = 10
 @export var dec: float = 10
+@export var jump_height: float = 10
+@export var grav: float = 100
 
-var move = Vector2.ZERO
+var move: int = 0
+var grounded = true
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	pass # Replace with function body.
 
 
+func _integrate_forces(state):
+	if grounded:
+		linear_velocity.y = 0
+	if max_speed > abs(linear_velocity.x):
+		linear_velocity.x = max_speed * move
+
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
-	# apply_force()
-	pass
+	if Input.is_action_just_pressed("dev"):
+		grounded = true
+		print(grounded)
+		
+	if Input.is_action_pressed("Dev_Add"):
+		grav += 1
+		print(grav)
+		# max_speed += 10
+		# print(max_speed)
+		# linear_damp += 0.5
+		# print(linear_damp)
+	if Input.is_action_pressed("Dev_Sub"):
+		grav -= 1
+		print(grav)
+		# max_speed -= 10
+		# print(max_speed)
+		# linear_damp -= 0.5
+		# print(linear_damp)
+		
+	if Input.is_action_pressed("Left"):
+		move = -1
+	elif Input.is_action_pressed("Right"):
+		move = 1
+	else:
+		move = 0
+
+	
+	apply_force(Vector2.RIGHT * move * acc * delta)
+	
+	if Input.is_action_pressed("Jump") and grounded:
+		grounded = false
+		apply_central_impulse(Vector2(0,-1) * jump_height)
+		
+	if not grounded:
+		apply_central_impulse(Vector2.DOWN * grav * delta)
+	# print(linear_velocity)
+func is_grounded() -> bool:
+	return true
