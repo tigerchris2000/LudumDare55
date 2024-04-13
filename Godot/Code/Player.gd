@@ -57,3 +57,8 @@ func spawn(abilty, pos):
 	var a = abilty.instantiate()
 	a.position = pos
 	get_parent().add_child(a)
+
+
+func _on_area_2d_body_shape_entered(body_rid, body, body_shape_index, local_shape_index):	
+	if body.is_in_group("Spikes"):
+		pass  # DIEING HAPPENS HERE
