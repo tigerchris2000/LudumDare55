@@ -47,7 +47,7 @@ func _process(delta):
 		
 	if not grounded:
 		apply_central_impulse(Vector2.DOWN * grav * delta)
-
+		
 func cast_ability(abilty):
 	match abilty:
 		CLOUD:
