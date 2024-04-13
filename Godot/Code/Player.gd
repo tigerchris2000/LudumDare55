@@ -10,6 +10,8 @@ extends RigidBody2D
 var move: int = 0
 var grounded = true
 
+enum {CLOUD}
+
 var cloud = preload("res://Presets/Abilities/cloud.tscn")
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -40,12 +42,17 @@ func _process(delta):
 		apply_central_impulse(Vector2(0,-1) * jump_height)
 		
 	if Input.is_action_just_pressed("dev"):
-		spawn(cloud, position+ Vector2.DOWN * offset)
+		cast_ability(CLOUD)
 		
 	if not grounded:
 		apply_central_impulse(Vector2.DOWN * grav * delta)
 
+func cast_ability(abilty):
+	match abilty:
+		CLOUD:
+			spawn(cloud, position + Vector2.DOWN * offset)
+
 func spawn(abilty, pos):
 	var a = abilty.instantiate()
 	a.position = pos
-	add_child(a)
+	get_parent().add_child(a)

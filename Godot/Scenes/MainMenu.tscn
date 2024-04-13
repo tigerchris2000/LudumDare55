@@ -1,4 +1,4 @@
-[gd_scene load_steps=6 format=3 uid="uid://dor3i2oj5fhbk"]
+[gd_scene load_steps=6 format=3 uid="uid://jdkajdxw8moo"]
 
 [ext_resource type="Texture2D" uid="uid://bi2q2dpf4hv0e" path="res://Assets/MainMenu/title.png" id="1_lyx70"]
 [ext_resource type="Texture2D" uid="uid://dbb6xdwrencc" path="res://Assets/MainMenu/label_new_game.png" id="2_7lytr"]
