@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dtfnw1u2g1q4f"
-path="res://.godot/imported/Lulu_Dialog1.png-ff3483f533150cab7ec17090b11535d0.ctex"
+uid="uid://xhr0qbsmnl5a"
+path="res://.godot/imported/grade3.png-a690f8b2d97f247119961e89e504cabd.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/MC/Lulu_Dialog1.png"
-dest_files=["res://.godot/imported/Lulu_Dialog1.png-ff3483f533150cab7ec17090b11535d0.ctex"]
+source_file="res://Assets/Tiles/grade3.png"
+dest_files=["res://.godot/imported/grade3.png-a690f8b2d97f247119961e89e504cabd.ctex"]
 
 [params]
 
