@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=3 uid="uid://cxomgi4amtp8k"]
+[gd_scene load_steps=9 format=3 uid="uid://b7r5e3h6hrbvx"]
 
 [ext_resource type="Script" path="res://Code/Player.gd" id="1_dqrkn"]
 [ext_resource type="Texture2D" uid="uid://mvvsmcqnkp01" path="res://icon.svg" id="2_acpni"]
@@ -265,7 +265,7 @@ texture = ExtResource("3_4hjx2")
 sources/0 = SubResource("TileSetAtlasSource_gctu3")
 sources/1 = SubResource("TileSetAtlasSource_wpjyq")
 
-[node name="Node2D" type="Node2D"]
+[node name="Node2D2" type="Node2D"]
 
 [node name="RigidBody2D" type="RigidBody2D" parent="."]
 script = ExtResource("1_dqrkn")

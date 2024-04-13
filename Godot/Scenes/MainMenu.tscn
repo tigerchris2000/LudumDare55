@@ -38,12 +38,14 @@ alignment = 1
 [node name="StartGame" type="Button" parent="HBoxContainer/VBoxContainer/MenuOptions"]
 custom_minimum_size = Vector2(470, 110)
 layout_mode = 2
+theme_override_font_sizes/font_size = 50
 text = "Start Game"
 script = ExtResource("3_o2t8m")
 
 [node name="Exit" type="Button" parent="HBoxContainer/VBoxContainer/MenuOptions"]
 custom_minimum_size = Vector2(470, 110)
 layout_mode = 2
+theme_override_font_sizes/font_size = 50
 text = "Exit"
 script = ExtResource("3_o2t8m")
 
