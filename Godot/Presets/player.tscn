@@ -1,8 +1,9 @@
-[gd_scene load_steps=12 format=3 uid="uid://dx7goxcqdabd6"]
+[gd_scene load_steps=13 format=3 uid="uid://dx7goxcqdabd6"]
 
 [ext_resource type="Script" path="res://Code/Player.gd" id="1_ovk6s"]
 [ext_resource type="Texture2D" uid="uid://mi0knlnsi8b2" path="res://Assets/MC/Lulu_IDLE.png" id="2_jfod7"]
 [ext_resource type="Texture2D" uid="uid://fe2m04v6yady" path="res://Assets/MC/LdJamLulu_RUN.png" id="3_tu10k"]
+[ext_resource type="Texture2D" uid="uid://c6crfu7j0v2uv" path="res://Assets/Mslc/wolke7.png" id="4_6h5l0"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_htgh1"]
 size = Vector2(127, 128)
@@ -134,12 +135,12 @@ script = ExtResource("1_ovk6s")
 max_speed = 700.0
 acc = 500.0
 dec = 500.0
-jump_height = 22000.0
+jump_height = 550.0
 grav = 2800.0
 offset = 2000.0
 
 [node name="RayCast2D" type="RayCast2D" parent="."]
-target_position = Vector2(-1, 74)
+target_position = Vector2(0, 80)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0.5, 0)
@@ -166,3 +167,8 @@ frame = 3
 libraries = {
 "": SubResource("AnimationLibrary_hitwq")
 }
+
+[node name="Wolke7" type="Sprite2D" parent="."]
+position = Vector2(-2, 4)
+scale = Vector2(3.575, 3.575)
+texture = ExtResource("4_6h5l0")
