@@ -26,6 +26,7 @@ func _integrate_forces(state):
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
+	print(Engine.get_frames_per_second())
 	grounded = $RayCast2D.is_colliding()
 		
 	if Input.is_action_pressed("Left"):
