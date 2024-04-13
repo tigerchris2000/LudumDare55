@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://dx7goxcqdabd6"]
 
 [ext_resource type="Script" path="res://Code/Player.gd" id="1_ovk6s"]
-[ext_resource type="Texture2D" uid="uid://mvvsmcqnkp01" path="res://icon.svg" id="2_8rro1"]
+[ext_resource type="Texture2D" uid="uid://mi0knlnsi8b2" path="res://Assets/MC/Lulu_IDLE.png" id="2_jfod7"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_htgh1"]
 size = Vector2(127, 128)
@@ -26,4 +26,5 @@ position = Vector2(0.5, 0)
 shape = SubResource("RectangleShape2D_htgh1")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-texture = ExtResource("2_8rro1")
+texture = ExtResource("2_jfod7")
+hframes = 18
