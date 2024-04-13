@@ -168,9 +168,9 @@ libraries = {
 "": SubResource("AnimationLibrary_hitwq")
 }
 
-
-[node name="Area2D" type="Area2D" parent="."]
-shape = SubResource("RectangleShape2D_htgh1")
+[node name="Wolke7" type="Sprite2D" parent="."]
 position = Vector2(-2, 4)
 scale = Vector2(3.575, 3.575)
 texture = ExtResource("4_6h5l0")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
