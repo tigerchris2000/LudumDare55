@@ -16,10 +16,11 @@ gravity_scale = 0.0
 lock_rotation = true
 angular_damp = -1.0
 script = ExtResource("1_jjbk4")
-max_speed = 2000.0
+max_speed = 800.0
 acc = 1000.0
 dec = 1000.0
-jump_height = 100.0
+jump_height = 1600.0
+grav = 3600.0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Player"]
 position = Vector2(0.5, 0)
