@@ -14,12 +14,12 @@ script = ExtResource("1_ovk6s")
 max_speed = 700.0
 acc = 500.0
 dec = 500.0
-jump_height = 550.0
+jump_height = 22000.0
 grav = 2800.0
 offset = 2000.0
 
 [node name="RayCast2D" type="RayCast2D" parent="."]
-target_position = Vector2(0, 80)
+target_position = Vector2(-1, 74)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0.5, 0)
