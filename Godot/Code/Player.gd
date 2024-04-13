@@ -56,6 +56,8 @@ func _process(delta):
 		
 	if not grounded:
 		apply_central_impulse(Vector2.DOWN * grav * delta)
-	# print(linear_velocity)
+		
+	print(linear_velocity.y)
+
 func is_grounded() -> bool:
 	return true
