@@ -20,7 +20,6 @@ max_speed = 2000.0
 acc = 1000.0
 dec = 1000.0
 jump_height = 100.0
-offset = 500.0
 
 [node name="RayCast2D" type="RayCast2D" parent="Player"]
 target_position = Vector2(0, 80)
