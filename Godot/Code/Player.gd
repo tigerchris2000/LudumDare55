@@ -9,6 +9,7 @@ extends RigidBody2D
 
 var move: int = 0
 var grounded = true
+var jumpdelay = 0
 
 enum {CLOUD}
 
@@ -26,8 +27,6 @@ func _integrate_forces(state):
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
-	Engine.max_fps = 60
-	print(Engine.get_frames_per_second())
 	grounded = $RayCast2D.is_colliding()
 		
 	if Input.is_action_pressed("Left"):
@@ -41,7 +40,7 @@ func _process(delta):
 	
 	if Input.is_action_pressed("Jump") and grounded:
 		grounded = false
-		apply_central_impulse(Vector2(0,-1) * jump_height)
+		apply_central_impulse(Vector2(0,-1) * jump_height * delta)
 		
 	if Input.is_action_just_pressed("dev"):
 		cast_ability(CLOUD)
