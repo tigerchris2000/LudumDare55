@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3 uid="uid://cbec0hf1k7kno"]
+
+[ext_resource type="Script" path="res://Presets/Abilities/cloud.gd" id="1_8ga8n"]
+[ext_resource type="Texture2D" uid="uid://mvvsmcqnkp01" path="res://icon.svg" id="1_j8opp"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_jkm3m"]
+size = Vector2(182, 41)
+
+[node name="Cloud" type="StaticBody2D"]
+script = ExtResource("1_8ga8n")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-2, -2.5)
+shape = SubResource("RectangleShape2D_jkm3m")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(1.41406, 0.335938)
+texture = ExtResource("1_j8opp")
