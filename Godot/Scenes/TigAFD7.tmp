@@ -12,6 +12,8 @@ size = Vector2(127, 126)
 jump_height = 20000.0
 grav = 2000.0
 
+[node name="Camera2D" type="Camera2D" parent="."]
+
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
 position = Vector2(-0.085, 200)
 scale = Vector2(9.43, 1)

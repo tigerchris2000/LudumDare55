@@ -183,6 +183,4 @@ texture = ExtResource("4_6h5l0")
 position = Vector2(1, 2)
 shape = SubResource("RectangleShape2D_eg0nn")
 
-[node name="Camera2D" type="Camera2D" parent="."]
-
 [connection signal="body_shape_entered" from="Area2D" to="." method="_on_area_2d_body_shape_entered"]
