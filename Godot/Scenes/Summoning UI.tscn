@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://cwrdm6drf8r47"]
+
+[node name="SummoningUi" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TextEdit" type="TextEdit" parent="."]
+layout_mode = 0
+offset_left = 4.0
+offset_right = 492.0
+offset_bottom = 37.0
+text = "Well done! You found a Crystal. Take this spirit as a reward..."
+placeholder_text = "Summon a placeholder!"
