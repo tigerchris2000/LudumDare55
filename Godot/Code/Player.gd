@@ -13,6 +13,7 @@ var scale_y
 var grounded = true
 var flipped = 10
 var pic_flipped = false
+var mov_locked = false
 
 enum {CLOUD, GRAVITY}
 
@@ -39,7 +40,8 @@ func _process(delta):
 	
 	grounded = $RayCast2D.is_colliding()
 		
-	apply_move(delta)
+	if not mov_locked:
+		apply_move(delta)
 	
 
 	if Input.is_action_just_pressed("dev"):
@@ -94,3 +96,6 @@ func spawn(abilty, pos):
 func _on_area_2d_body_shape_entered(body_rid, body, body_shape_index, local_shape_index):	
 	if body.is_in_group("Spikes"):
 		pass  # DIEING HAPPENS HERE
+
+func toggle_mov_lock():
+	mov_locked = not mov_locked
